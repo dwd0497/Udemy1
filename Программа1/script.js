@@ -1,7 +1,7 @@
 let money, time;
 
 function start () {
-	money = +prompt("Ваш бюджет на месяц", "5000"),
+	money = +prompt("Ваш бюджет на месяц", "5000");
 	time = prompt("Введите дату в формате YYYY-MM-DD", "2019-08-12");
 
 	while (isNaN(money) || money == "" || money == null) {
@@ -70,7 +70,7 @@ checkSavings();
 
 function chooseOptExpenses() {
 	for (let i = 0; i < 3; i++) {
-		let aa = prompt("Введите обязательную статью расходов в этом месяце", "");
+		let aa = prompt("Введите необязательную статью расходов в этом месяце", "");
 		let bb = prompt("Во сколько обойдется?", "");
 
 		appData.optionalExpenses[aa] = bb;
